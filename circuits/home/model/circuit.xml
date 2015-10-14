@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit>
+<!-- mhome -->
+<circuit access="internal" xmlns:cf="cf/">
+
+  <fuseaction name="actPageInfo">
+    <include template="actPageInfo"/>
+  </fuseaction>
+
+  <fuseaction name="actPageResources">
+    <include template="actPageResources"/>
+  </fuseaction>
+
+</circuit>

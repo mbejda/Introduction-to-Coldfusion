@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit>
+<!-- layout -->
+<circuit access="public" xmlns:cf="cf/">
+  <fuseaction name="layMain">
+    <include template="layMain" />
+  </fuseaction>
+</circuit>

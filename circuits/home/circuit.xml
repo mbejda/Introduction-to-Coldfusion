@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit>
+<!-- home -->
+<circuit access="public" xmlns:cf="cf/">
+
+  <!-- Minimum Display -->
+  <fuseaction name="main">
+    <do action="vHome.dspMain" contentvariable="content.main" />
+    <do action="layout.layMain" />
+  </fuseaction>
+
+  <!-- Load all - resource Page Demo -->
+  <fuseaction name="demo">
+    <do action="mhome.actPageInfo"/>
+    <do action="mhome.actPageResources" contentvariable="content.resources" />
+    <do action="vHome.dspDemo" contentvariable="content.main" />
+    <do action="layout.layMain" />
+  </fuseaction>
+
+</circuit>

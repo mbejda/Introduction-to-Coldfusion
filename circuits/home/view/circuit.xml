@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit>
+<!-- vhome -->
+<circuit access="internal" xmlns:cf="cf/">
+
+  <!-- DEMO -->
+  <fuseaction name="dspMain">
+    <include template="dspMain" />
+  </fuseaction>
+  <fuseaction name="dspDemo">
+    <include template="dspDemo" />
+  </fuseaction>
+  <!-- [END] DEMO -->
+
+</circuit>

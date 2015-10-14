@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fusebox>
+<fusebox xmlns:test="test">
+  <circuits>
+    <circuit alias="home"			path="circuits/home/" 				parent="" />
+    <circuit alias="vhome"		path="circuits/home/view/" 		parent="home" />
+    <circuit alias="mhome"		path="circuits/home/model/"		parent="home" />
+
+    <circuit alias="layout"		path="circuits/layout/" 			parent="home" />
+  </circuits>
+
+  <classes>
+    <!-- <class alias="ic" classpath="#request.componentPath#ic" type="component" /> -->
+  </classes>
+
+  <parameters>
+    <parameter name="defaultFuseaction" value="home.main" />
+    <parameter name="mode" value="development-full-load" />
+    <!-- <parameter name="mode" value="production" /> -->
+    <!-- change this to something more secure: -->
+    <parameter name="password" value="" />
+    <parameter name="strictMode" value="true" />
+    <!--
+    These are all default values that can be overridden:
+    <parameter name="fuseactionVariable" value="fuseaction" />
+    <parameter name="precedenceFormOrUrl" value="form" />
+    <parameter name="scriptFileDelimiter" value="cfm" />
+    <parameter name="maskedFileDelimiters" value="htm,cfm,cfml,php,php4,asp,aspx" />
+    <parameter name="characterEncoding" value="utf-8" />
+    <paramater name="strictMode" value="false" />
+    <parameter name="allowImplicitCircuits" value="false" />
+    <parameter name="debug" value="false" />
+    -->
+  </parameters>
+
+  <globalfuseactions>
+    <!--
+    <appinit>
+      <fuseaction action="m.initialize" />
+    </appinit>
+    -->
+    <preprocess>
+      <!-- <fuseaction action="login.checkLogin" /> -->
+    </preprocess>
+    <postprocess>
+    </postprocess>
+  </globalfuseactions>
+
+  <plugins>
+    <phase name="preProcess">
+      <!--
+      <plugin name="prePP" template="example_plugin" test:abc="123">
+        <parameter name="def" value="456" />
+      </plugin>
+      -->
+    </phase>
+    <phase name="preFuseaction">
+    </phase>
+    <phase name="postFuseaction">
+    </phase>
+    <phase name="fuseactionException">
+    </phase>
+    <phase name="postProcess">
+    </phase>
+    <phase name="processError">
+    </phase>
+  </plugins>
+</fusebox>
